@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investment Calculator - InvestorX in Canada</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #000;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background-color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: #000;
+            font-size: 16px;
+        }
+
+        header .right-nav {
+            display: flex;
+            gap: 10px;
+        }
+
+        header .right-nav a {
+            text-decoration: none;
+            color: #000;
+            font-size: 14px;
+        }
+
+        header .right-nav .sign-in {
+            background-color: #ff6200;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        /* Tool Section */
+        .tool {
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .tool h1 {
+            font-size: 36px;
+            margin-bottom: 40px;
+            text-align: center;
+            color: #fff;
+            animation: fadeInDown 1s ease-out;
+        }
+
+        .tool .intro {
+            font-size: 16px;
+            margin-bottom: 40px;
+            text-align: center;
+            color: #fff;
+            max-width: 900px;
+            margin: 0 auto 40px;
+            animation: fadeIn 1s ease-out 0.5s backwards;
+        }
+
+        .tool .calculator {
+            background-color: #000;
+            padding: 30px;
+            border: 1px solid #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+            animation: slideIn 1s ease-out;
+        }
+
+        .tool .calculator label {
+            display: block;
+            color: #fff;
+            margin-bottom: 5px;
+            font-size: 16px;
+        }
+
+        .tool .calculator input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #fff;
+            border-radius: 5px;
+            background-color: #222;
+            color: #fff;
+            font-size: 14px;
+            transition: border-color 0.3s ease;
+        }
+
+        .tool .calculator input:focus {
+            border-color: #ff6200;
+            outline: none;
+        }
+
+        .tool .calculator button {
+            background-color: #ff6200;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .tool .calculator button:hover {
+            background-color: #e55a00;
+            transform: scale(1.05);
+        }
+
+        .tool .calculator #result {
+            margin-top: 20px;
+            color: #fff;
+            font-size: 18px;
+            animation: fadeIn 1s ease-out 1s backwards;
+        }
+
+        /* Animations */
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateX(-20px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        /* Footer */
+        footer {
+            background-color: #000;
+            color: #fff;
+            padding: 50px 20px;
+        }
+
+        footer .top {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        footer .top .left {
+            margin-right: 5px;
+            flex: 1;
+        }
+
+        footer .top .left h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        footer .top .left p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        footer .top .right {
+            flex: 1;
+            margin-left: 50px;
+            display: flex;
+            gap: 15px;
+        }
+
+        footer .top .right .column {
+            flex: 1;
+        }
+
+        footer .top .right .column h4 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        footer .top .right .column ul {
+            list-style: none;
+        }
+
+        footer .top .right .column ul li {
+            margin-bottom: 5px;
+        }
+
+        footer .top .right .column ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        footer .bottom {
+            font-size: 12px;
+            text-align: center;
+            border-top: 1px solid #333;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">InvestorX</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="insights.html">Insights</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="blog_home.html">Blog</a></li>
+            </ul>
+        </nav>
+        <div class="right-nav">
+            <a href="coming-soon.html">CyberV</a>
+        </div>
+    </header>
+
+    <!-- Tool Section -->
+    <section class="tool">
+        <h1>Investment Calculator</h1>
+        <p class="intro">Estimate your potential returns with our easy-to-use investment calculator. Input your details to see how your investments could grow over time.</p>
+        <div class="calculator">
+            <label for="initial-investment">Initial Investment ($):</label>
+            <input type="number" id="initial-investment" placeholder="e.g., 1000" min="0">
+            <label for="annual-contribution">Annual Contribution ($):</label>
+            <input type="number" id="annual-contribution" placeholder="e.g., 500" min="0">
+            <label for="years">Years:</label>
+            <input type="number" id="growth-rate" placeholder="e.g., 10" min="1">
+            <label for="growth-rate">Growth rate P.A</label>
+            <input type="number" id="years" placeholder="e.g., 5%-7%" min="0">
+            <button onclick="calculateInvestment()">Calculate</button>
+            <div id="result"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="top">
+            <div class="left">
+                <h2>InvestorX</h2>
+                <p>As a global investment manager and fiduciary to our clients, our purpose at InvestorX is to help everyone experience financial well-being. Since 2025, we’ve been a leading provider of financial technology, and our clients turn to us for the solutions they need when planning for their most important goals.</p>
+            </div>
+            <div class="right">
+                <div class="column">
+                    <h4>Corporate</h4>
+                    <ul>
+                        <li><a href="fraud-protection-tips.html">Fraud protection tips</a></li>
+                        <li><a href="newsroom.html">Newsroom</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="terms-conditions.html">Terms & conditions</a></li>
+                        <li><a href="privacy-policy.html">Privacy policy</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h4>FAQs</h4>
+                    <ul>
+                        <li><a href="contact-us.html">Contact us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <p>© 2025 InvestorX, Inc. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function calculateInvestment() {
+            const initial = parseFloat(document.getElementById('initial-investment').value) || 0;
+            const annual = parseFloat(document.getElementById('annual-contribution').value) || 0;
+            const years = parseInt(document.getElementById('years').value) || 0;
+            const growth = parseFloat(document.getElementById('growth-rate').value) || 0;
+             // Assuming 5% annual return for simplicity
+
+            if (years <= 0) {
+                document.getElementById('result').innerText = 'Please enter a valid number of years.';
+                return;
+            }
+
+            let futureValue = initial * Math.pow((1 + (growth)/100), years);
+            for (let i = 1; i <= years; i++) {
+                futureValue += annual * Math.pow((1 + (growth/100)), years - i);
+            }
+
+            document.getElementById('result').innerText = `Estimated Future Value: $${futureValue.toFixed(2)}`;
+        }
+    </script>
+</body>
+</html>

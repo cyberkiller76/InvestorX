@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - InvestorX in Canada</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #000;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background-color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+        }
+
+        header .right-nav {
+            display: flex;
+            gap: 10px;
+        }
+
+        header .right-nav a {
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+        }
+
+        header .right-nav .sign-in {
+            background-color: #ff6200;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 50px 20px;
+        }
+
+        .services h1 {
+            font-size: 36px;
+            margin-bottom: 40px;
+            text-align: center;
+            color: #fff;
+        }
+
+        .services .intro {
+            font-size: 16px;
+            margin-bottom: 40px;
+            text-align: center;
+            color: #fff;
+            max-width: 800px;
+            margin: 0 auto 40px;
+        }
+
+        .services .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            
+        }
+
+        .services .service-card {
+            background-color: #000;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            border: 1px solid white;
+        }
+
+        .services .service-card img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        .services .service-card h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+
+        .services .service-card p {
+            font-size: 14px;
+            margin-bottom: 15px;
+            color: #fff;
+        }
+
+        .services .service-card a {
+            background-color: #ff6200;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        .services .service-card a:hover {
+            background-color: #e55a00;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #000;
+            color: #fff;
+            padding: 50px 20px;
+        }
+
+        footer .top {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        footer .top .left {
+            margin-right: 5px;
+            flex: 1;
+        }
+
+        footer .top .left h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        footer .top .left p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        footer .top .right {
+            flex: 1;
+            margin-left: 50px;
+            display: flex;
+            gap: 15px;
+        }
+
+        footer .top .right .column {
+            flex: 1;
+        }
+
+        footer .top .right .column h4 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        footer .top .right .column ul {
+            list-style: none;
+        }
+
+        footer .top .right .column ul li {
+            margin-bottom: 5px;
+        }
+
+        footer .top .right .column ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        footer .bottom {
+            font-size: 12px;
+            text-align: center;
+            border-top: 1px solid #333;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">InvestorX</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <!-- <li><a href="">Products</a></li> -->
+                <li><a href="education.html">Education</a></li>
+                <li><a href="insights.html">Insights</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <!-- <li><a href="services.html">Services</a></li> -->
+                <li><a href="about.html">About us</a></li>
+                <li><a href="blog_home.html">Blog</a></li>
+            </ul>
+        </nav>
+        <div class="right-nav">
+            <a href="coming-soon.html">CyberV</a>
+
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section class="services">
+        <h1>Our Services</h1>
+        <p class="intro">At InvestorX, we are currently limited to provide you with educational resources, Blogs, Newletters and Research Papers. But we are bring much more services soon! You can review our upcoming services down below!</p>
+        <h2 class="intro">Stay Tuned!</h2>
+        <div class="service-grid">
+            <div class="service-card">
+                <img src="invest_manage.png" alt="Investment Management">
+                <h3>Investment Management</h3>
+                <p>Our expert team manages your investments across various asset classes, ensuring optimal growth and
+                    risk management tailored to your goals.</p>
+                <!-- <a href="#">Learn More</a> -->
+            </div>
+            <div class="service-card">
+                <img src="etf_advise.png" alt="Financial Planning">
+                <h3>Financial Planning</h3>
+                <p>We offer personalized financial planning services to help you secure your future, from retirement
+                    planning to wealth preservation.</p>
+                <!-- <a href="#">Learn More</a> -->
+            </div>
+            <div class="service-card">
+                <img src="financial_plan.png" alt="ETF Offering">
+                <h3>ETF Advising</h3>
+                <p>Access a wide range of ETFs, to diversify your portfolio with ease and
+                    efficiency.</p>
+                <!-- <a href="#">Learn More</a> -->
+            </div>
+            <div class="service-card">
+                <img src="model_p.png" alt="Model Portfolios">
+                <h3>Model Portfolios</h3>
+                <p>Choose from our expertly crafted model portfolios designed to match your risk tolerance and
+                    investment style.</p>
+                <!-- <a href="#">Learn More</a> -->
+            </div>
+            <div class="service-card">
+                <img src="CIS.png" alt="CIS">
+                <h3>Commodities Investing Strategies</h3>
+                <p>Invest in trends shaping the future, such as technology, sustainability, and infrastructure, with our
+                    thematic investment options.</p>
+                <!-- <a href="#">Learn More</a> -->
+            </div>
+            <div class="service-card">
+                <img src="advise.png" alt="Advisory Services">
+                <h3>Equity Advisory Services</h3>
+                <p>Receive expert advice from our financial advisors to make informed decisions and achieve your
+                    financial objectives.</p>
+                <!-- <a href="#">Learn More</a> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="top">
+            <div class="left">
+                <h2>InvestorX</h2>
+                <p>As a global investment manager and fiduciary to our clients, our purpose at InvestorX is to help
+                    everyone experience financial well-being. Since 2025, we’ve been a leading provider of financial
+                    technology, and our clients turn to us for the solutions they need when planning for their most
+                    important goals.</p>
+            </div>
+            <div class="right">
+                <div class="column">
+                    <h4>Corporate</h4>
+                    <ul>
+                        <li><a href="fraud-protection-tips.html">Fraud protection tips</a></li>
+                        <!-- <li><a href="#">Careers</a></li> -->
+                        <li><a href="newsroom.html">Newsroom</a></li>
+                        <!-- <li><a href="#">Investor relations</a></li> -->
+                    </ul>
+                </div>
+                <div class="column">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="terms-conditions.html">Terms & conditions</a></li>
+                        <li><a href="privacy-policy.html">Privacy policy</a></li>
+                        <!-- <li><a href="#">Business continuity</a></li> -->
+                        <!-- <li><a href="#">Manage Cookies</a></li> -->
+                    </ul>
+                </div>
+                <div class="column">
+                    <h4>FAQs</h4>
+                    <ul>
+                        <li><a href="contact-us.html">Contact us</a></li>
+                        <!-- <li><a href="#">Accessibility</a></li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <p>© 2025 InvestorX, Inc. All rights reserved.</p>
+
+
+        </div>
+    </footer>
+</body>
+
+</html>

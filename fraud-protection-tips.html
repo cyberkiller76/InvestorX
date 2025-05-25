@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fraud Protection Tips - InvestorX in Canada</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #ddd;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #000000;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        header nav ul li a:hover {
+            color: #000000;
+        }
+
+        header .right-nav {
+            display: flex;
+            gap: 10px;
+        }
+
+        header .right-nav a {
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+            transition: color 0.3s ease;
+        }
+
+        header .right-nav a:hover {
+            color: #000000;
+        }
+
+        header .right-nav .sign-in {
+            background-color: #ff6200;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        header .right-nav .sign-in:hover {
+            background-color: #000000;
+            color: #fff;
+        }
+
+        .content {
+            padding: 100px 20px 50px;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            flex: 1;
+        }
+
+        .content h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #000000;
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .content p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+            color: #666;
+            animation: fadeIn 1s ease-in-out 0.3s;
+            animation-fill-mode: both;
+        }
+
+        .content h2 {
+            font-size: 24px;
+            margin: 30px 0 15px;
+            color: #333;
+            animation: fadeIn 1s ease-in-out 0.6s;
+            animation-fill-mode: both;
+        }
+
+        .content ul {
+            list-style: disc;
+            padding-left: 20px;
+            margin-bottom: 15px;
+            animation: fadeIn 1s ease-in-out 0.9s;
+            animation-fill-mode: both;
+        }
+
+        .content ul li {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .content a {
+            color: #ff0000;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .content a:hover {
+            color: #000000;
+        }
+
+        footer {
+            background-color: #000;
+            color: #fff;
+            padding: 50px 20px;
+        }
+
+        footer .top {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        footer .top .left {
+            margin-right: 5px;
+            flex: 1;
+        }
+
+        footer .top .left h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        footer .top .left p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        footer .top .right {
+            flex: 1;
+            margin-left: 50px;
+            display: flex;
+            gap: 15px;
+        }
+
+        footer .top .right .column {
+            flex: 1;
+        }
+
+        footer .top .right .column h4 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        footer .top .right .column ul {
+            list-style: none;
+        }
+
+        footer .top .right .column ul li {
+            margin-bottom: 5px;
+        }
+
+        footer .top .right .column ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        footer .bottom {
+            font-size: 12px;
+            text-align: center;
+            border-top: 1px solid #333;
+            padding-top: 20px;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            header nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .content {
+                padding: 80px 15px 30px;
+            }
+
+            .content h1 {
+                font-size: 28px;
+            }
+
+            .content h2 {
+                font-size: 20px;
+            }
+
+            .content p, .content ul li {
+                font-size: 14px;
+            }
+
+            footer {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">InvestorX</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <!-- <li><a href="stocks.html">Stocks</a></li> -->
+                <!-- <li><a href="etf-categories.html">ETFs</a></li> -->
+                <li><a href="education.html">Education</a></li>
+                <li><a href="insights.html">Insights</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+        <div class="right-nav">
+            <a href="coming-soon.html">CyberV</a>
+            <!-- <a href="#">Canada</a>
+            <a href="#">EN</a>
+            <a href="#">FR</a>
+            <a href="login.html" class="sign-in">Sign In</a> -->
+        </div>
+    </header>
+
+    <!-- Fraud Protection Tips Content -->
+    <section class="content">
+        <h1>Fraud Protection Tips</h1>
+        <p>At InvestorX, your security is our priority. Here are some essential tips to help you protect yourself from fraud and keep your investments safe.</p>
+
+        <h2>1. Be Cautious of Unsolicited Communications</h2>
+        <p>Scammers often use emails, phone calls, or text messages to trick you into sharing personal information. Never respond to unsolicited requests for your account details or passwords.</p>
+        <ul>
+            <li>Verify the sender’s identity before clicking on any links.</li>
+            <li>Contact InvestorX directly using the information on our <a href="contact-us.html">Contact Us</a> page if you’re unsure.</li>
+        </ul>
+
+        <h2>2. Use Strong Passwords</h2>
+        <p>Create strong, unique passwords for your InvestorX account and other financial services.</p>
+        <ul>
+            <li>Use a mix of letters, numbers, and special characters.</li>
+            <li>Avoid using easily guessable information like your name or birthdate.</li>
+            <li>Consider using a password manager to keep track of complex passwords.</li>
+        </ul>
+
+        <h2>3. Monitor Your Accounts Regularly</h2>
+        <p>Check your InvestorX account frequently for any unusual activity. Report any suspicious transactions immediately.</p>
+        <ul>
+            <li>Enable notifications for account activity if available.</li>
+            <li>Review your statements and transaction history monthly.</li>
+        </ul>
+
+        <h2>4. Be Wary of Investment Scams</h2>
+        <p>Fraudsters may promise high returns with little risk. If an investment opportunity seems too good to be true, it probably is.</p>
+        <ul>
+            <li>Research any investment opportunity thoroughly.</li>
+            <li>Consult with a financial advisor before making decisions.</li>
+        </ul>
+
+        <h2>5. Report Suspicious Activity</h2>
+        <p>If you suspect fraud or notice anything unusual, contact us immediately. The sooner we know, the faster we can help protect your account.</p>
+        <p>Reach out to us via our <a href="contact-us.html">Contact Us</a> page or call us at 437-366-6945</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="top">
+            <div class="left">
+                <h2>InvestorX</h2>
+                <p>As a global investment manager and fiduciary to our clients, our purpose at InvestorX is to help
+                    everyone experience financial well-being. Since 2025, we’ve been a leading provider of financial
+                    technology, and our clients turn to us for the solutions they need when planning for their most
+                    important goals.</p>
+            </div>
+            <div class="right">
+                <div class="column">
+                    <h4>Corporate</h4>
+                    <ul>
+                        <li><a href="fraud-protection-tips.html">Fraud protection tips</a></li>
+                        <!-- <li><a href="#">Careers</a></li> -->
+                        <li><a href="newsroom.html">Newsroom</a></li>
+                        <!-- <li><a href="#">Investor relations</a></li> -->
+                    </ul>
+                </div>
+                <div class="column">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="terms-conditions.html">Terms & conditions</a></li>
+                        <li><a href="privacy-policy.html">Privacy policy</a></li>
+                        <!-- <li><a href="#">Business continuity</a></li> -->
+                        <!-- <li><a href="#">Manage Cookies</a></li> -->
+                    </ul>
+                </div>
+                <div class="column">
+                    <h4>FAQs</h4>
+                    <ul>
+                        <li><a href="contact-us.html">Contact us</a></li>
+                        <!-- <li><a href="#">Accessibility</a></li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <p>© 2025 InvestorX, Inc. All rights reserved.</p>
+            
+
+        </div>
+    </footer>
+</body>
+</html>

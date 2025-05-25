@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equity ETFs - InvestorX in Canada</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #000;
+            color: #fff;
+        }
+
+        header {
+            background-color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #000;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+        }
+
+        header .right-nav {
+            display: flex;
+            gap: 10px;
+        }
+
+        header .right-nav a {
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+        }
+
+        header .right-nav .sign-in {
+            background-color: #ff6200;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        .etfs {
+            padding: 50px 20px;
+        }
+
+        .etfs .hero {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .etfs .hero h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .etfs .hero p {
+            font-size: 16px;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        .etfs .etf-list {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .etfs .etf-list table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .etfs .etf-list table th, .etfs .etf-list table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #000;
+        }
+
+        .etfs .etf-list table th {
+            background-color: #000;
+            font-size: 18px;
+        }
+
+        .etfs .etf-list table td {
+            font-size: 16px;
+        }
+
+        .etfs .etf-list table td.price {
+            color: #ff6200;
+        }
+
+        footer {
+            background-color: #000;
+            color: #fff;
+            padding: 50px 20px;
+        }
+
+        footer .top {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        footer .top .left {
+            margin-right: 5px;
+            flex: 1;
+        }
+
+        footer .top .left h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        footer .top .left p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        footer .top .right {
+            flex: 1;
+            margin-left: 50px;
+            display: flex;
+            gap: 15px;
+        }
+
+        footer .top .right .column {
+            flex: 1;
+        }
+
+        footer .top .right .column h4 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        footer .top .right .column ul {
+            list-style: none;
+        }
+
+        footer .top .right .column ul li {
+            margin-bottom: 5px;
+        }
+
+        footer .top .right .column ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        footer .bottom {
+            font-size: 12px;
+            text-align: center;
+            border-top: 1px solid #333;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">InvestorX</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <!-- <li><a href="stocks.html">Stocks</a></li> -->
+                <li><a href="education.html">Education</a></li>
+                <li><a href="insights.html">Insights</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+        <div class="right-nav">
+            <a href="coming-soon.html">CyberV</a>
+            
+        </div>
+    </header>
+
+    <!-- ETFs Section -->
+    <section class="etfs">
+        <div class="hero">
+            <h1>Equity ETFs</h1>
+            <p>Buying shares for the long term. When you invest in equities (also called stocks) you buy a share in a company and become a shareholder.</p>
+            <p> Equities are typically the best for long-term investing – those who are able to ride out the highs and lows of the market in search of higher rewards.</p>
+        </div>
+
+        <div class="etf-list">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ticker</th>
+                        <th>Name</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+                <tbody id="etf-table-body">
+                    <tr>
+                        <td>SPY</td>
+                        <td>SPDR S&P 500 ETF Trust</td>
+                        <td class="price">The S&P 500 Index is a diversified large cap U.S. index that holds companies across all eleven GICS sectors. The SPDR® S&P 500® ETF Trust seeks to provide investment results that, before expenses, correspond generally to the price and yield performance of the S&P 500® Index  </td>
+                    </tr>
+                    <tr>
+                        <td>QQQ</td>
+                        <td>Invesco QQQ Trust</td>
+                        <td class="price">Invesco QQQ ETF tracks the Nasdaq-100 Index — giving you access to the performance of the 100 largest non-financial companies listed on the Nasdaq. The fund and the index are rebalanced quarterly and reconstituted annually.</td>
+                    </tr>
+                    <tr>
+                        <td>IVV</td>
+                        <td>iShares Core S&P 500 ETF</td>
+                        <td class="price">The iShares Core S&P 500 ETF seeks to track the investment results of an index composed of large-capitalization U.S. equities.</td>
+                    </tr>
+                    <tr>
+                        <td>VOO</td>
+                        <td>Vanguard S&P 500 ETF</td>
+                        <td class="price">Invests in stocks in the S&P 500 Index, representing 500 of the largest U.S. companies. Goal is to closely track the index’s return, which is considered a gauge of overall U.S. stock returns.</td>
+                    </tr>
+                    <tr>
+                        <td>EFA</td>
+                        <td>iShares MSCI EAFE ETF</td>
+                        <td class="price">The iShares MSCI EAFE ETF seeks to track the investment results of an index composed of large- and mid-capitalization developed market equities, excluding the U.S. and Canada.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
+    <script type="text/javascript" src="equity.js" async>
+    {
+    "symbols"; [
+      [
+        "AMEX:SPY|1D"
+      ],
+      [
+        "NASDAQ:QQQ|1D"
+      ],
+      [
+        "AMEX:IVV|1D"
+      ],
+      [
+        "AMEX:VOO|1D"
+      ],
+      [
+        "AMEX:EFA|1D"
+      ]
+    ],
+    "chartOnly"; false,
+    "width"; "100%",
+    "height"; "100%",
+    "locale"; "en",
+    "colorTheme"; "dark",
+    "autosize"; true,
+    "showVolume"; false,
+    "showMA"; false,
+    "hideDateRanges"; false,
+    "hideMarketStatus"; false,
+    "hideSymbolLogo"; false,
+    "scalePosition"; "right",
+    "scaleMode"; "Normal",
+    "fontFamily"; "-apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif",
+    "fontSize"; "10",
+    "noTimeScale"; false,
+    "valuesTracking"; "1",
+    "changeMode"; "price-and-percent",
+    "chartType"; "area",
+    "maLineColor"; "#2962FF",
+    "maLineWidth"; 1,
+    "maLength"; 9,
+    "headerFontSize"; "medium",
+    "lineWidth"; 2,
+    "lineType"; 0,
+    "dateRanges"; [
+      "1d|1",
+      "1m|30",
+      "3m|60",
+      "12m|1D",
+      "60m|1W",
+      "all|1M"
+    ]
+  }
+    </script>
+  </div>
+  <!-- TradingView Widget END -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="top">
+            <div class="left">
+                <h2>InvestorX</h2>
+                <p>As a global investment manager and fiduciary to our clients, our purpose at InvestorX is to help
+                    everyone experience financial well-being. Since 2025, we’ve been a leading provider of financial
+                    technology, and our clients turn to us for the solutions they need when planning for their most
+                    important goals.</p>
+            </div>
+            <div class="right">
+                <div class="column">
+                    <h4>Corporate</h4>
+                    <ul>
+                        <li><a href="fraud-protection-tips.html">Fraud protection tips</a></li>
+                        <!-- <li><a href="#">Careers</a></li> -->
+                        <li><a href="newsroom.html">Newsroom</a></li>
+                        <!-- <li><a href="#">Investor relations</a></li> -->
+                    </ul>
+                </div>
+                <div class="column">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="terms-conditions.html">Terms & conditions</a></li>
+                        <li><a href="privacy-policy.html">Privacy policy</a></li>
+                        <!-- <li><a href="#">Business continuity</a></li> -->
+                        <!-- <li><a href="#">Manage Cookies</a></li> -->
+                    </ul>
+                </div>
+                <div class="column">
+                    <h4>FAQs</h4>
+                    <ul>
+                        <li><a href="contact-us.html">Contact us</a></li>
+                        <!-- <li><a href="#">Accessibility</a></li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <p>© 2025 InvestorX, Inc. All rights reserved.</p>
+            
+
+        </div>
+    </footer>
+
+    <!-- <script>
+        const etfs = [
+            { ticker: 'SPY', price: 440.75 },
+            { ticker: 'QQQ', price: 375.50 },
+            { ticker: 'IVV', price: 445.20 },
+            { ticker: 'VOO', price: 410.30 },
+            { ticker: 'EFA', price: 78.90 }
+        ];
+
+        function updatePrices() {
+            const tableBody = document.getElementById('etf-table-body');
+            tableBody.querySelectorAll('tr').forEach((row, index) => {
+                const priceCell = row.querySelector('.price');
+                priceCell.textContent = `$${etfs[index].price.toFixed(2)}`;
+            });
+        }
+
+        setInterval(() => {
+            etfs.forEach(etf => {
+                const change = (Math.random() * 2 - 1);
+                etf.price += change;
+            });
+            updatePrices();
+        }, 5000);
+    </script> -->
+</body>
+</html>

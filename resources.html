@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources - InvestorX in Canada</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #000;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background-color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: #000;
+            font-size: 16px;
+        }
+
+        header .right-nav {
+            display: flex;
+            gap: 10px;
+        }
+
+        header .right-nav a {
+            text-decoration: none;
+            color: #000;
+            font-size: 14px;
+        }
+
+        header .right-nav .sign-in {
+            background-color: #ff6200;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        /* Resources Section */
+        .resources {
+            padding: 50px 20px;
+        }
+
+        .resources h1 {
+            font-size: 36px;
+            margin-bottom: 40px;
+            text-align: center;
+            color: #fff;
+        }
+
+        .resources .intro {
+            font-size: 16px;
+            margin-bottom: 40px;
+            text-align: center;
+            color: #fff;
+            max-width: 900px;
+            margin: 0 auto 40px;
+        }
+
+        .resources .section {
+            /* color: #fff; */
+            margin-bottom: 50px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .resources .section h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            text-align: center;
+            color: #fff;
+        }
+
+        .resources .section .resource-grid {
+            display: grid;
+            /* border-color: #fff; */
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .resources .section .resource-card {
+            background-color: #000;
+            padding: 20px;
+            border-color: #fff;
+            border: 1px solid white;
+            /* border- */
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .resources .section .resource-card img {
+            width: 225px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        .resources .section .resource-card h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+
+        .resources .section .resource-card p {
+            font-size: 14px;
+            margin-bottom: 15px;
+            color: #fff;
+        }
+
+        .resources .section .resource-card a {
+            background-color: #ff6200;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        .resources .section .resource-card a:hover {
+            background-color: #e55a00;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #000;
+            color: #fff;
+            padding: 50px 20px;
+        }
+
+        footer .top {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        footer .top .left {
+            margin-right: 5px;
+            flex: 1;
+        }
+
+        footer .top .left h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        footer .top .left p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        footer .top .right {
+            flex: 1;
+            margin-left: 50px;
+            display: flex;
+            gap: 15px;
+        }
+
+        footer .top .right .column {
+            flex: 1;
+        }
+
+        footer .top .right .column h4 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        footer .top .right .column ul {
+            list-style: none;
+        }
+
+        footer .top .right .column ul li {
+            margin-bottom: 5px;
+        }
+
+        footer .top .right .column ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        footer .bottom {
+            font-size: 12px;
+            text-align: center;
+            border-top: 1px solid #333;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">InvestorX</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="insights.html">Insights</a></li>
+                <li><a href="services.html">Services</a></li>
+                <!-- <li><a href="resources.html">Resources</a></li> -->
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="blog_home.html">Blog</a></li>
+
+            </ul>
+        </nav>
+        <div class="right-nav">
+            <a href="coming-soon.html">CyberV</a>
+
+        </div>
+    </header>
+
+    <!-- Resources Section -->
+    <section class="resources">
+        <h1>Resources</h1>
+        <p class="intro">Explore a variety of resources to enhance your investment knowledge and make informed financial
+            decisions with InvestorX.</p>
+
+        <!-- Guides Section -->
+        <div class="section">
+            <h2>Investment Guides</h2>
+            <div class="resource-grid">
+                <div class="resource-card">
+                    <img src="begineer_guide_img.png" alt="Beginner's Guide">
+                    <h3>Beginner's Guide to Investing</h3>
+                    <p>Learn the basics of investing, including how to start, what to consider, and common pitfalls to
+                        avoid.</p>
+                    <a href="begineer.pdf">Download PDF</a>
+                </div>
+                <div class="resource-card">
+                    <img src="U_etfs.png" alt="ETF Guide">
+                    <h3>Understanding ETFs</h3>
+                    <p>A comprehensive guide to Exchange-Traded Funds (ETFs) and how they can fit into your investment
+                        strategy.</p>
+                    <a href="early.pdf">Download PDF</a>
+                </div>
+                <div class="resource-card">
+                    <img src="retire.png" alt="Retirement Guide">
+                    <h3>Retirement Planning Guide</h3>
+                    <p>Plan for a secure retirement with our step-by-step guide to saving and investing for the future.
+                    </p>
+                    <a href="Senior.pdf">Download PDF</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tools Section -->
+        <div class="section">
+            <h2>Financial Tools</h2>
+            <div class="resource-grid">
+                <div class="resource-card">
+                    <img src="calc.png" alt="Investment Calculator">
+                    <h3>Investment Calculator</h3>
+                    <p>Estimate your potential returns with our easy-to-use investment calculator.</p>
+                    <a href="calc.html">Use Tool</a>
+                </div>
+                <div class="resource-card">
+                    <img src="risk.png" alt="Risk Assessment">
+                    <h3>Risk Assessment Tool</h3>
+                    <p>Evaluate your risk tolerance to find the right investment strategy for you.</p>
+                    <a href="risk.html">Use Tool</a>
+                </div>
+                <div class="resource-card">
+                    <img src="pr.png" alt="Portfolio Analyzer">
+                    <h3>Risk Profile Maker </h3>
+                    <p>Analyze your portfolio's performance and get personalized recommendations.</p>
+                    <a href="https://www.tradingview.com/options/">Use Tool</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- External Resources Section -->
+        <div class="section">
+            <h2>External Resources</h2>
+            <div class="resource-grid">
+                <div class="resource-card">
+                    <img src="yahoo.png" alt="Market News">
+                    <h3>Market News</h3>
+                    <p>Stay updated with the latest market news and trends from trusted sources.</p>
+                    <a href="https://finance.yahoo.com/">Visit Site</a>
+                </div>
+                <div class="resource-card">
+                    <img src="bloomberg.png" alt="Financial Blogs">
+                    <h3>Financial Blogs</h3>
+                    <p>Explore insightful financial blogs for tips and strategies from industry experts.</p>
+                    <a href="https://www.bloomberg.com/">Visit Site</a>
+                </div>
+                <div class="resource-card">
+                    <img src="ciro.jpg" alt="Regulatory Resources">
+                    <h3>Regulatory Resources</h3>
+                    <p>Access regulatory information and guidelines for investors in Canada.</p>
+                    <a href="https://www.ciro.ca/office-investor">Visit Site</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="top">
+            <div class="left">
+                <h2>InvestorX</h2>
+                <p>As a global investment manager and fiduciary to our clients, our purpose at InvestorX is to help
+                    everyone experience financial well-being. Since 2025, we’ve been a leading provider of financial
+                    technology, and our clients turn to us for the solutions they need when planning for their most
+                    important goals.</p>
+            </div>
+            <div class="right">
+                <div class="column">
+                    <h4>Corporate</h4>
+                    <ul>
+                        <li><a href="fraud-protection-tips.html">Fraud protection tips</a></li>
+                        <!-- <li><a href="#">Careers</a></li> -->
+                        <li><a href="newsroom.html">Newsroom</a></li>
+                        <!-- <li><a href="#">Investor relations</a></li> -->
+                    </ul>
+                </div>
+                <div class="column">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="terms-conditions.html">Terms & conditions</a></li>
+                        <li><a href="privacy-policy.html">Privacy policy</a></li>
+                        <!-- <li><a href="#">Business continuity</a></li> -->
+                        <!-- <li><a href="#">Manage Cookies</a></li> -->
+                    </ul>
+                </div>
+                <div class="column">
+                    <h4>FAQs</h4>
+                    <ul>
+                        <li><a href="contact-us.html">Contact us</a></li>
+                        <!-- <li><a href="#">Accessibility</a></li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <p>© 2025 InvestorX, Inc. All rights reserved.</p>
+
+
+        </div>
+    </footer>
+</body>
+
+</html>

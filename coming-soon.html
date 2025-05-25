@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Coming Soon - InvestorX</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #000000 0%, #16213e 100%);
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            overflow-x: hidden;
+        }
+
+        header {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+        header .logo {
+            font-size: 28px;
+            font-weight: 700;
+            color: #ffffff;
+            /* text-transform: uppercase; */
+            letter-spacing: 2px;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        header nav ul li a:hover {
+            color: #ff6f61;
+        }
+
+        .main-content {
+            text-align: center;
+            padding: 20px;
+            max-width: 800px;
+            margin-top: 80px;
+        }
+
+        .main-content h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            background: linear-gradient(90deg, #ff1500, #00ff1a);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .main-content p {
+            font-size: 18px;
+            color: #b0b0b0;
+            margin-bottom: 30px;
+            line-height: 1.6;
+            animation: fadeIn 2s ease-in-out 0.5s;
+            animation-fill-mode: both;
+        }
+
+        .countdown {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 40px;
+            animation: fadeIn 2s ease-in-out 1s;
+            animation-fill-mode: both;
+        }
+
+        .countdown div {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            min-width: 100px;
+            text-align: center;
+            backdrop-filter: blur(5px);
+        }
+
+        .countdown div span {
+            display: block;
+            font-size: 36px;
+            font-weight: 700;
+            color: #ff6f61;
+        }
+
+        .countdown div p {
+            font-size: 14px;
+            color: #b0b0b0;
+            margin: 0;
+        }
+
+        .subscribe {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 40px;
+            animation: fadeIn 2s ease-in-out 1.5s;
+            animation-fill-mode: both;
+        }
+
+        .subscribe input[type="email"] {
+            padding: 12px 20px;
+            border: none;
+            border-radius: 25px 0 0 25px;
+            outline: none;
+            font-size: 16px;
+            width: 300px;
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+        }
+
+        .subscribe button {
+            padding: 12px 30px;
+            border: none;
+            border-radius: 0 25px 25px 0;
+            background: #ff6f61;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .subscribe button:hover {
+            background: #ff9f80;
+        }
+
+        footer {
+            position: absolute;
+            bottom: 20px;
+            text-align: center;
+            font-size: 14px;
+            color: #b0b0b0;
+        }
+
+        footer a {
+            color: #ff6f61;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header {
+                padding: 15px 20px;
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            header .logo {
+                font-size: 24px;
+            }
+
+            header nav ul {
+                gap: 15px;
+            }
+
+            .main-content h1 {
+                font-size: 36px;
+            }
+
+            .main-content p {
+                font-size: 16px;
+            }
+
+            .countdown {
+                gap: 10px;
+            }
+
+            .countdown div {
+                min-width: 80px;
+                padding: 15px;
+            }
+
+            .countdown div span {
+                font-size: 28px;
+            }
+
+            .subscribe input[type="email"] {
+                width: 200px;
+                font-size: 14px;
+            }
+
+            .subscribe button {
+                padding: 12px 20px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">InvestorX</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <!-- <li><a href="stocks.html">Stocks</a></li> -->
+                <!-- <li><a href="etf-categories.html">ETFs</a></li> -->
+                <li><a href="education.html">Education</a></li>
+                <li><a href="insights.html">Insights</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="blog_home.html">Blog</a>
+            </ul>
+        </nav>
+        <div class="right-nav">
+            <!-- <a href="#">Investors</a> -->
+            <!-- <a href="coming-soon.html">CyberV</a> -->
+
+
+            <!-- <a href="login.html" class="sign-in">Sign In</a> -->
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <h1>Our AI is Coming Soon!</h1>
+        <p>We're thrilled to announce that InvestorX is developing a cutting-edge AI to revolutionize your investment experience. Stay tuned for smarter insights, predictive analytics, and personalized strategies.</p>
+
+        <!-- Countdown Timer -->
+        <div class="countdown" id="countdown">
+            <div>
+                <span id="days">00</span>
+                <p>Days</p>
+            </div>
+            <div>
+                <span id="hours">00</span>
+                <p>Hours</p>
+            </div>
+            <div>
+                <span id="minutes">00</span>
+                <p>Minutes</p>
+            </div>
+            <div>
+                <span id="seconds">00</span>
+                <p>Seconds</p>
+            </div>
+        </div>
+
+        <!-- Subscription Form -->
+        <!-- <div class="subscribe">
+            <input type="email" id="email" placeholder="Enter your email to stay updated" required>
+            <button onclick="subscribe()">Notify Me</button>
+        </div> -->
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2025 InvestorX. All rights reserved. <a href="privacy-policy.html">Privacy Policy</a>
+    </footer>
+
+    <!-- JavaScript for Countdown and Subscription -->
+    <script>
+        // Countdown Timer
+        const launchDate = new Date("June 30, 2025 00:00:00").getTime();
+
+        const countdown = setInterval(() => {
+            const now = new Date().getTime();
+            const distance = launchDate - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("days").textContent = days.toString().padStart(2, "0");
+            document.getElementById("hours").textContent = hours.toString().padStart(2, "0");
+            document.getElementById("minutes").textContent = minutes.toString().padStart(2, "0");
+            document.getElementById("seconds").textContent = seconds.toString().padStart(2, "0");
+
+            if (distance < 0) {
+                clearInterval(countdown);
+                document.getElementById("countdown").innerHTML = "<h2>We're Live!</h2>";
+            }
+        }, 1000);
+
+        // Subscription Function (Placeholder)
+        function subscribe() {
+            const email = document.getElementById("email").value;
+            if (email) {
+                alert("Thank you for subscribing! We'll notify you at " + email + " when our AI launches.");
+                document.getElementById("email").value = "";
+            } else {
+                alert("Please enter a valid email address.");
+            }
+        }
+    </script>
+</body>
+</html>

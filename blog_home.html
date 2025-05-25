@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog - InvestorX</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #000;
+      color: #333;
+    }
+
+    header {
+      background-color: #fff;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #ddd;
+    }
+
+    header .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    header nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    header nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-size: 16px;
+    }
+
+    header .right-nav a {
+      text-decoration: none;
+      color: #333;
+      font-size: 14px;
+    }
+
+    .blog-section {
+      padding: 50px 20px;
+      background-color: #000;
+    }
+
+    .blog-section h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      text-align: center;
+      color: #fff;
+    }
+
+    .blog-section .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      max-width: 2000px;
+      margin: 0 auto;
+    }
+
+    .blog-section .grid .card {
+      background-color: #000;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      border: 2px solid white;
+    }
+
+    .blog-section .grid .card h3 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+
+    .blog-section .grid .card .date {
+      font-size: 14px;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+
+    .blog-section .grid .card p {
+      font-size: 14px;
+      margin-bottom: 20px;
+      color: #fff;
+      }
+
+    .blog-section .grid .card a {
+      color: #ff6200;
+      text-decoration: none;
+    }
+
+    footer {
+      background-color: #000;
+      color: #fff;
+      padding: 50px 20px;
+    }
+
+    footer .top {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    footer .top .left {
+      margin-right: 5px;
+      flex: 1;
+    }
+
+    footer .top .left h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    footer .top .left p {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    footer .top .right {
+      flex: 1;
+      margin-left: 50px;
+      display: flex;
+      gap: 15px;
+    }
+
+    footer .top .right .column {
+      flex: 1;
+    }
+
+    footer .top .right .column h4 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    footer .top .right .column ul {
+      list-style: none;
+    }
+
+    footer .top .right .column ul li {
+      margin-bottom: 5px;
+    }
+
+    footer .top .right .column ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    footer .bottom {
+      font-size: 12px;
+      text-align: center;
+      border-top: 1px solid #333;
+      padding-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">InvestorX</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="insights.html">Insights</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="about.html">About us</a></li>
+      </ul>
+    </nav>
+    <div class="right-nav">
+      <a href="coming-soon.html">CyberV</a>
+    </div>
+  </header>
+
+  <section class="blog-section">
+    <h2>InvestorX Blog and Research Papers</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Diversified portfolio - Building wealth from scratch</h3>
+        <div class="date">May 20, 2025</div>
+        <p>Explore hore to make a diversified portfolio for safe and steady growth.</p>
+        <a href="r1.pdf">Read More</a>
+      </div>
+      <div class="card">
+        <h3>The Rise of Tokenized Assets: Impact on Traditional Financial Markets</h3>
+        <div class="date">May 15, 2025</div>
+        <p> Tokenized assets—real-world assets (RWAs) represented on blockchain—are disrupting traditional finance.</p>
+        <a href="r2.pdf">Read More</a>
+      </div>
+      <div class="card">
+        <h3>Integrating AI into Financial Risk Management: Opportunities and Challenges</h3>
+        <div class="date">May 10, 2025</div>
+        <p>AI is transforming how financial institutions manage risk.</p>
+        <a href="r3.pdf">Read More</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="top">
+      <div class="left">
+        <h2>InvestorX</h2>
+        <p>As a global investment manager and fiduciary to our clients, our purpose at InvestorX is to help
+          everyone experience financial well-being. Since 2025, we’ve been a leading provider of financial
+          technology, and our clients turn to us for the solutions they need when planning for their most
+          important goals.</p>
+      </div>
+      <div class="right">
+        <div class="column">
+          <h4>Corporate</h4>
+          <ul>
+            <li><a href="fraud-protection-tips.html">Fraud protection tips</a></li>
+            <!-- <li><a href="#">Careers</a></li> -->
+            <li><a href="newsroom.html">Newsroom</a></li>
+            <!-- <li><a href="#">Investor relations</a></li> -->
+          </ul>
+        </div>
+        <div class="column">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="terms-conditions.html">Terms & conditions</a></li>
+            <li><a href="privacy-policy.html">Privacy policy</a></li>
+            <!-- <li><a href="#">Business continuity</a></li> -->
+            <!-- <li><a href="#">Manage Cookies</a></li> -->
+          </ul>
+        </div>
+        <div class="column">
+          <h4>FAQs</h4>
+          <ul>
+            <li><a href="contact-us.html">Contact us</a></li>
+            <!-- <li><a href="#">Accessibility</a></li> -->
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="bottom">
+      <p>© 2025 InvestorX, Inc. All rights reserved.</p>
+
+
+    </div>
+  </footer>
+</body>
+
+</html>
